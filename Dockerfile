@@ -2,6 +2,8 @@ FROM php:7-alpine
 
 MAINTAINER Pierre Prinetti <me@qrawl.net>
 
+ENV PAGER more
+
 RUN docker-php-ext-install mysqli
 
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
